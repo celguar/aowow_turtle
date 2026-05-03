@@ -33,7 +33,7 @@ $UDWBaseconf['udwbase']['cache_time']   = (60*60*24*7); // Time to keep cache in
 $UDWBaseconf['locale']                  = 0;
 $UDWBaseconf['register']                = false;
 $UDWBaseconf['expansion']               = 0; // Used with register
-$UDWBaseconf['limit']                   = 300;
+$UDWBaseconf['limit']                   = 1000;
 $UDWBaseconf['debug']                   = false;
 
 
