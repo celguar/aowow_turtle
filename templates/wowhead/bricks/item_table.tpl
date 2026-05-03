@@ -40,6 +40,7 @@
         {* Название/качество вещи, обязательно *}
         name: '{$data[i].quality2}{$data[i].name|escape:"quotes"}',
         description: '{$data[i].description|escape:"quotes"}',
+        {if $data[i].entry > 50000}expansion: 1,{/if}
         {* Уровень вещи *}
         {if $data[i].level}
             level: {$data[i].level},

@@ -8,6 +8,7 @@
 			{section name=i loop=$data}
 				{ldelim}
 					id: '{$data[i].id}',
+					{if $data[i].id > 30000}expansion: 1,{/if}
 					name: '{$data[i].Title|escape:"quotes"}',
 					level: '{$data[i].QuestLevel}',
 					{if ($data[i].MinLevel)}

@@ -3950,7 +3950,7 @@ Listview.templates = {
                 ae(A, ct(C.name));
                 if (C.expansion == 1) {
                     var B = ce("span");
-                    B.className = "bc-icon";
+                    B.className = "tw-icon";
                     ae(B, A);
                     ae(D, B)
                 } else {
@@ -4018,6 +4018,14 @@ Listview.templates = {
                 A.href = this.template.getItemLink(D);
                 ae(A, ct(D.name.substring(1)));
                 ae(G, A)
+                if (D.expansion == 1) {
+                    var H = ce("span");
+                    H.className = "tw-icon";
+                    ae(H, A);
+                    ae(G, H)
+                } else {
+                    ae(G, A)
+                }
             }
         },
             {
@@ -4161,7 +4169,20 @@ Listview.templates = {
                 A.style.fontFamily = "Verdana, sans-serif";
                 A.href = this.template.getItemLink(B);
                 ae(A, ct(B.name.substring(1)));
-                ae(D, A);
+                //ae(D, A);
+                B.expansion = 0;
+                for (var E = 0, F = B.pieces.length; E < F; ++E) {
+                    console.log(B.pieces[E]);
+                    if (B.pieces[E] && B.pieces[E] >= 50000) { B.expansion = 1; }
+                }
+                if (B.expansion == 1) {
+                    var H = ce("span");
+                    H.className = "tw-icon";
+                    ae(H, A)
+                    ae(D, H)
+                } else {
+                    ae(D, A)
+                }
                 if (B.note) {
                     var C = ce("div");
                     C.className = "small";
@@ -4425,7 +4446,14 @@ Listview.templates = {
                 A.style.fontFamily = "Verdana, sans-serif";
                 A.href = this.template.getItemLink(B);
                 ae(A, ct(B.name));
-                ae(C, A)
+                if (B.expansion == 1) {
+                    var D = ce("span");
+                    D.className = "tw-icon";
+                    ae(D, A);
+                    ae(C, D)
+                } else {
+                    ae(C, A)
+                }
             }
         },
             {
@@ -4829,7 +4857,7 @@ Listview.templates = {
                 ae(A, ct(B.name));
                 if (B.expansion == 1) {
                     var C = ce("span");
-                    C.className = "bc-icon";
+                    C.className = "tw-icon";
                     ae(C, A);
                     ae(D, C)
                 } else {

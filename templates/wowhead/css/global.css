@@ -218,6 +218,11 @@ a.open {
     background: url(../images/bc_icon.gif) right center no-repeat;
 }
 
+.tw-icon {
+    padding-right: 34px;
+    background: url(../images/favicon.ico) right center no-repeat;
+}
+
 .alliance-icon {
     padding-left: 18px;
     background: url(../images/alliance-icon.gif) left center no-repeat;
