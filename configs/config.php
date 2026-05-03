@@ -35,6 +35,7 @@ $UDWBaseconf['register']                = false;
 $UDWBaseconf['expansion']               = 0; // Used with register
 $UDWBaseconf['limit']                   = 1000;
 $UDWBaseconf['debug']                   = false;
+$UDWBaseconf['cache']                   = true; // save and load pages from cache
 
 
 define('LOCALE_REQUIREMENTS', 'Requirements');

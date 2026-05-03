@@ -32,7 +32,7 @@ class Smarty_UDWBase extends Smarty {
         $this->right_delimiter = '}';
         
         // Disable full caching
-        $this->caching = true;
+        $this->caching = $UDWBaseconf['cache'];;
         
         // Name of the site
         $this->assign('app_name', $UDWBaseconf['udwbase']['name']);
