@@ -852,9 +852,9 @@ if ((!$items) || isset($_REQUEST['filters'])) {
 		FROM ' . AOWOW . '.aowow_icons, ' . WORLD . '.item_template i
 			{LEFT JOIN (' . WORLD . '.locales_item l) ON l.entry=i.entry AND ?d}
 		WHERE
-			id=display_id AND i.entry >= 50000 and i.name not like "DEPRECATED%"
+			id=display_id AND i.entry >= 50000
 			ORDER BY quality DESC, name
-			LIMIT 500
+			LIMIT 10000
 		', $item_cols[2], ($_SESSION['locale']) ? $_SESSION['locale'] : DBSIMPLE_SKIP, ($_SESSION['locale']) ? 1 : DBSIMPLE_SKIP
         );
 
