@@ -167,7 +167,12 @@ var mn_quests = [
             [1537, "Ironforge"], [38, "Loch Modan"], [44, "Redridge Mountains"], [51, "Searing Gorge"],
             [130, "Silverpine Forest"], [1519, "Stormwind City"], [33, "Stranglethorn Vale"], [8, "Swamp of Sorrows"],
             [47, "The Hinterlands"], [85, "Tirisfal Glades"], [1497, "Undercity"], [28, "Western Plaguelands"],
-            [40, "Westfall"], [11, "Wetlands"]
+            [40, "Westfall"], [11, "Wetlands"],
+            [5225, "Thalassian Highlands", , , , "ability_hunter_pet_turtle"],
+            [2040, "Alah'Thalas", , , , "ability_hunter_pet_turtle"],
+            [408, "Gillijim's Isle", , , , "ability_hunter_pet_turtle"],
+            [409, "Lapidis Isle", , , , "ability_hunter_pet_turtle"],
+            [5179, "Gilneas", , , , "ability_hunter_pet_turtle"]
         ]
     ],
     [1, "Kalimdor", ,
@@ -177,7 +182,11 @@ var mn_quests = [
             [361, "Felwood"], [357, "Feralas"], [493, "Moonglade"], [215, "Mulgore"], [1637, "Orgrimmar"], [1377, "Silithus"],
             [406, "Stonetalon Mountains"], [440, "Tanaris"], [141, "Teldrassil"], [17, "The Barrens"],
             [400, "Thousand Needles"], [1638, "Thunder Bluff"], [1216, "Timbermaw Hold"], [490, "Un'Goro Crater"],
-            [618, "Winterspring"]
+            [618, "Winterspring"],
+            [5121, "Tel'Abim", , , , "ability_hunter_pet_turtle"],
+            [5536, "Blackstone Island", , , , "ability_hunter_pet_turtle"],
+            [616, "Hyjal", , , , "ability_hunter_pet_turtle"],
+            [5024, "Icepoint Rock", , , , "ability_hunter_pet_turtle"]
         ]
     ],
     [2, "Dungeons", ,
@@ -186,13 +195,21 @@ var mn_quests = [
             [1583, "Blackrock Spire"], [2557, "Dire Maul"], [133, "Gnomeregan"], [2100, "Maraudon"],
             [2437, "Ragefire Chasm"], [722, "Razorfen Downs"], [491, "Razorfen Kraul"], [796, "Scarlet Monastery"],
             [2057, "Scholomance"], [209, "Shadowfang Keep"], [2017, "Stratholme"], [1581, "The Deadmines"],
-            [717, "The Stockade"], [1337, "Uldaman"], [718, "Wailing Caverns"], [978, "Zul'Farrak"]
+            [717, "The Stockade"], [1337, "Uldaman"], [718, "Wailing Caverns"], [978, "Zul'Farrak"],
+            [1941, "Caverns of Time", , , , "ability_hunter_pet_turtle"],
+            [5098, "Hateforge Quarry", , , , "ability_hunter_pet_turtle"],
+            [5208, "Gilneas City", , , , "ability_hunter_pet_turtle"],
+            [5077, "Crescent Grove", , , , "ability_hunter_pet_turtle"],
+            [5087, "Stormwind Vault", , , , "ability_hunter_pet_turtle"],
+            [5086, "Karazhan Crypt", , , , "ability_hunter_pet_turtle"]
         ]
     ],
     [3, "Raids", ,
         [
             [2677, "Blackwing Lair"], [2717, "Molten Core"], [3456, "Naxxramas"], [2159, "Onyxia's Lair"],
-            [3429, "Ruins of Ahn'Qiraj"], [3428, "Temple of Ahn'Qiraj"], [19, "Zul'Gurub"]
+            [3429, "Ruins of Ahn'Qiraj"], [3428, "Temple of Ahn'Qiraj"], [19, "Zul'Gurub"],
+            [3457, "Lower Karazhan Halls", , , , "ability_hunter_pet_turtle"],
+            [5097, "Emerald Sanctum", , , , "ability_hunter_pet_turtle"]
         ]
     ],
     [4, "Classes", ,
@@ -202,10 +219,10 @@ var mn_quests = [
     ],
     [5, "Professions", ,
         [
-            [-181, "Alchemy"], [-121, "Blacksmithing"], [-304, "Cooking"], [-201, "Engineering"], [-324, "First Aid"], [-101, "Fishing"], [-24, "Herbalism"], [-182, "Leatherworking"], [-264, "Tailoring"]
+            [-181, "Alchemy"], [-121, "Blacksmithing"], [-304, "Cooking"], [-201, "Engineering"], [-324, "First Aid"], [-101, "Fishing"], [-24, "Herbalism"], [-182, "Leatherworking"], [-264, "Tailoring"], [-371, "Jewelcrafting", , , ,"ability_hunter_pet_turtle"]
         ]
     ],
-    [6, "Battlegrounds", , [[-25, "All"], [3358, "Arathi Basin"], [2597, "Alterac Valley"], [3277, "Warsong Gulch"]]],
+    [6, "Battlegrounds", , [[-25, "All"], [3358, "Arathi Basin"], [2597, "Alterac Valley"], [3277, "Warsong Gulch"], [5023, "Sunnyglade Valley", , , , "ability_hunter_pet_turtle"]]],
     [9, "Seasonal", , [[-364, "Darkmoon Faire"], [-1003, "Hallow's End"], [-366, "Lunar Festival"], [-369, "Midsummer Fire Festival"]]],
     [7, "Miscellaneous", ,
         [
@@ -217,9 +234,9 @@ var mn_quests = [
         ]
     ],
     [-2, "Uncategorized"],
-    [-44, "Turtle WoW Quests"]
+    [-44, "Turtle WoW Quests", , , , "ability_hunter_pet_turtle"]
 ];
-var mn_spells = [[7, "Class Skills", , [[11, "Druid", , [[574, "Balance"], [134, "Feral Combat"], [573, "Restoration"]]], [3, "Hunter", , [[50, "Beast Mastery"], [163, "Marksmanship"], [51, "Survival"]]], [8, "Mage", , [[237, "Arcane"], [8, "Fire"], [6, "Frost"]]], [2, "Paladin", , [[594, "Holy"], [267, "Protection"], [184, "Retribution"]]], [5, "Priest", , [[613, "Discipline"], [56, "Holy"], [78, "Shadow Magic"]]], [4, "Rogue", , [[253, "Assassination"], [38, "Combat"], [633, "Lockpicking"], [39, "Subtlety"]]], [7, "Shaman", , [[375, "Elemental Combat"], [373, "Enhancement"], [374, "Restoration"]]], [9, "Warlock", , [[355, "Affliction"], [354, "Demonology"], [593, "Destruction"]]], [1, "Warrior", , [[26, "Arms"], [256, "Fury"], [257, "Protection"]]]]], [-3, "Pet Skills", , [[782, "Ghoul"], [, "Hunter"], [270, "Generic"], [653, "Bat"], [210, "Bear"], [655, "Bird of Prey"], [211, "Boar"], [213, "Carrion Bird"], [209, "Cat"], [780, "Chimera"], [787, "Core Hound"], [214, "Crab"], [212, "Crocolisk"], [781, "Devilsaur"], [763, "Dragonhawk"], [215, "Gorilla"], [654, "Hyena"], [775, "Moth"], [217, "Raptor"], [767, "Ravager"], [786, "Rhino"], [236, "Scorpid"], [768, "Serpent"], [783, "Silithid"], [203, "Spider"], [788, "Spirit Beast"], [765, "Sporebat"], [218, "Tallstrider"], [251, "Turtle"], [766, "Warp Stalker"], [785, "Wasp"], [656, "Wind Serpent"], [208, "Wolf"], [784, "Worm"], [, "Warlock"], [761, "Felguard"], [189, "Felhunter"], [188, "Imp"], [205, "Succubus"], [204, "Voidwalker"]]], [11, "Professions", , [[171, "Alchemy"], [164, "Blacksmithing", , [[9788, "Armorsmithing"], [9787, "Weaponsmithing"], [17041, "Master Axesmithing"], [17040, "Master Hammersmithing"], [17039, "Master Swordsmithing"]]], [333, "Enchanting"], [202, "Engineering", , [[20219, "Gnomish Engineering"], [20222, "Goblin Engineering"]]], [182, "Herbalism"], [165, "Leatherworking", , [[10656, "Dragonscale Leatherworking"], [10658, "Elemental Leatherworking"], [10660, "Tribal Leatherworking"]]], [186, "Mining"], [393, "Skinning"], [197, "Tailoring", , [[26798, "Mooncloth Tailoring"], [26801, "Shadoweave Tailoring"], [26797, "Spellfire Tailoring"]]]]], [9, "Secondary Skills", , [[185, "Cooking"], [129, "First Aid"], [356, "Fishing"], [762, "Riding"]]], [8, "Armor Proficiencies"], [10, "Languages"], [-4, "Racial Traits"], [6, "Weapon Skills"], [0, "Uncategorized"]];
+var mn_spells = [[7, "Class Skills", , [[11, "Druid", , [[574, "Balance"], [134, "Feral Combat"], [573, "Restoration"]]], [3, "Hunter", , [[50, "Beast Mastery"], [163, "Marksmanship"], [51, "Survival"]]], [8, "Mage", , [[237, "Arcane"], [8, "Fire"], [6, "Frost"]]], [2, "Paladin", , [[594, "Holy"], [267, "Protection"], [184, "Retribution"]]], [5, "Priest", , [[613, "Discipline"], [56, "Holy"], [78, "Shadow Magic"]]], [4, "Rogue", , [[253, "Assassination"], [38, "Combat"], [633, "Lockpicking"], [39, "Subtlety"]]], [7, "Shaman", , [[375, "Elemental Combat"], [373, "Enhancement"], [374, "Restoration"]]], [9, "Warlock", , [[355, "Affliction"], [354, "Demonology"], [593, "Destruction"]]], [1, "Warrior", , [[26, "Arms"], [256, "Fury"], [257, "Protection"]]]]], [-3, "Pet Skills", , [[782, "Ghoul"], [, "Hunter"], [270, "Generic"], [653, "Bat"], [210, "Bear"], [655, "Bird of Prey"], [211, "Boar"], [213, "Carrion Bird"], [209, "Cat"], [780, "Chimera"], [787, "Core Hound"], [214, "Crab"], [212, "Crocolisk"], [781, "Devilsaur"], [763, "Dragonhawk"], [215, "Gorilla"], [654, "Hyena"], [775, "Moth"], [217, "Raptor"], [767, "Ravager"], [786, "Rhino"], [236, "Scorpid"], [768, "Serpent"], [783, "Silithid"], [203, "Spider"], [788, "Spirit Beast"], [765, "Sporebat"], [218, "Tallstrider"], [251, "Turtle"], [766, "Warp Stalker"], [785, "Wasp"], [656, "Wind Serpent"], [208, "Wolf"], [784, "Worm"], [, "Warlock"], [761, "Felguard"], [189, "Felhunter"], [188, "Imp"], [205, "Succubus"], [204, "Voidwalker"]]], [11, "Professions", , [[171, "Alchemy"], [164, "Blacksmithing", , [[9788, "Armorsmithing"], [9787, "Weaponsmithing"], [17041, "Master Axesmithing"], [17040, "Master Hammersmithing"], [17039, "Master Swordsmithing"]]], [333, "Enchanting"], [202, "Engineering", , [[20219, "Gnomish Engineering"], [20222, "Goblin Engineering"]]], [182, "Herbalism"], [165, "Leatherworking", , [[10656, "Dragonscale Leatherworking"], [10658, "Elemental Leatherworking"], [10660, "Tribal Leatherworking"]]], [186, "Mining"], [393, "Skinning"], [197, "Tailoring", , [[26798, "Mooncloth Tailoring"], [26801, "Shadoweave Tailoring"], [26797, "Spellfire Tailoring"]]], [755, "Jewelcrafting", , , ,"ability_hunter_pet_turtle"]]], [9, "Secondary Skills", , [[185, "Cooking"], [129, "First Aid"], [356, "Fishing"], [762, "Riding"]]], [8, "Armor Proficiencies"], [10, "Languages"], [-4, "Racial Traits"], [6, "Weapon Skills"], [0, "Uncategorized"]];
 var mn_zones = [[0, "Eastern Kingdoms"], [1, "Kalimdor"], [2, "Dungeons"], [3, "Raids"], [6, "Battlegrounds"]];
 var mn_talentCalc = [["0", "Druid"], ["c", "Hunter"], ["o", "Mage"], ["s", "Paladin"], ["b", "Priest"], ["f", "Rogue"], ["h", "Shaman"], ["I", "Warlock"], ["L", "Warrior"]];
 var mn_database = [
@@ -469,6 +486,7 @@ var g_reputation_standings = {
 var g_quest_sorts = {
     1: "Epic",
     24: "Herbalism",
+    22: "Season",
     25: "All Battlegrounds",
     61: "Warlock",
     81: "Warrior",
@@ -502,7 +520,10 @@ var g_quest_sorts = {
     1003: "Hallow's End",
     1004: "Love is in the Air",
     1005: "Harvest Festival",
-    1006: "New Year's Eve"
+    1006: "New Year's Eve",
+    371: "Jewelcrafting",
+    241: "Daily Quest",
+    22: "Seasonal",
 };
 var g_quest_types = {
     0: "Normal",
@@ -769,6 +790,54 @@ var g_zones = {
     3358: "Arathi Basin",
     3428: "Temple of Ahn'Qiraj",
     3429: "Ruins of Ahn'Qiraj",
+    3456: "Naxxramas",
+    3457: "Lower Karazhan Halls",
+    4012: "Scarlet Enclave",
+    5023: "Sunnyglade Valley",
+    5024: "Icepoint Rock",
+    5053: "Moomoo Grove",
+    5077: "Crescent Grove",
+    5086: "Karazhan Crypt",
+    5087: "Stormwind Vault",
+    5097: "Emerald Sanctum",
+    5103: "Hateforge Quarry",
+    5121: "Tel'Abim",
+    5130: "Winter Veil Vale",
+    5179: "Gilneas",
+    5204: "The Black Morass",
+    5208: "Gilneas City",
+    5225: "Thalassian Highlands",
+    5536: "Blackstone Island",
+    2037: "Quel'Thalas",
+    4021: "Sparkwater Port",
+    2040: "Alah'Thalas",
+    4011: "Venture Company Camp",
+    4018: "Hawk's Vigil",
+    721: "Gnomeregan",
+    876: "GM Island",
+    5180: "Gilneas City",
+    409: "Lapidis Isle",
+    408: "Gillijim's Isle",
+    150: "Menethil Harbor",
+    5098: "Hateforge Quarry",
+    616: "Hyjal",
+    5080: "Tsatsuri Wilds",
+    75: "Stonard",
+    354: "Jintha'Alor",
+    977: "Steamwheedle Port",
+    2240: "Mirage Raceway",
+    4014: "Blood Ring",
+    2255: "Everlook",
+    147: "The Farstrider Lodge",
+    1517: "Uldaman",
+    467: "Stonetalon Peak",
+    87: "Goldshire",
+    392: "Ratchet",
+    4020: "Ironforge Airfields",
+    1477: "The Temple of Atal'Hakkar",
+    410: "Razorwind Canyon",
+    69: "Lakeshire",
+
 };
 var g_zone_categories = {
     0: "Eastern Kingdoms",
